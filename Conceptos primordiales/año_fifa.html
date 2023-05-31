@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h2>Mundiales de la Fifa  </h2>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<h3>" + frase + "<h3>");
+        saltarLinea();
+    }
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Escriba el año limite para detener el programa: "))
+
+    while (anhoMundial <= limite) {
+
+    imprimir("Hubo mundial en el: " + anhoMundial);
+    anhoMundial = anhoMundial + 4;
+
+    }
+
+</script>

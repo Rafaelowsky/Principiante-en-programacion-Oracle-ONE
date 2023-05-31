@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+<h1>Juego de adivinación</h1>
+
+<script>
+
+    function saltoLinea () {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+
+    //Poner un número de intentos, hacer que si se adivina este se detenga,
+    //y tambien que al final muestre cual era el numero final
+
+    var numeroPensado = Math.round(Math.random()*10)
+    var numeroLanzado = parseInt(prompt("Ingrese un número entero entre el 0 y el 10:"))
+    var contador = 1
+    var intentos = 3
+
+    while (contador < intentos) {
+        
+        //Recordar que siempre en los parametros si se va a utilizar ==, siempre tienen que ser ambos ya que uno, solo
+        //se utiliza cuando se este declarando una variable.
+        
+        if (numeroPensado == numeroLanzado) {
+
+            prompt("Ganó el juego :)");
+            break;
+
+        }
+
+        //Se ocupa else después de if, para ejecutar una parte del código después de que un if no se haya cumplido
+        else {
+
+            prompt("Te equivocaste, Ingrese un número entero entre el 0 y el 10:");
+            contador++;
+            
+        }
+
+    }
+
+    if (numeroPensado == numeroLanzado) {
+
+       imprimir("Usted acerto en el intento número: " + contador + " con el número correcto: " + numeroPensado);
+       imprimir("Fin del juego");
+    
+        }
+
+        else {
+
+        imprimir("El número correcto era: " + numeroPensado);
+        imprimir("Fin del juego");
+
+        }
+
+
+</script>

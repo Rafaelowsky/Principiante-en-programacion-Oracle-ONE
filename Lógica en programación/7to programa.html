@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Programa IMC</h1>
+
+<script>
+
+    function saltoLinea () {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+
+    //Podemos ocupar mas de un parámetro para ocupar cuando estamos creando una función, pero hay que tener cuidado
+    //ya que esta siempre tomara los datos de forma secuencial, tambien tratar que las funciones solo realicen una operacion concreta
+    //para no saturar el código
+    function calcularImc (peso,altura,nombre) {
+
+        imc = peso / (altura*altura);
+
+        document.write("El imc de " + nombre + "es de " + imc);
+        saltoLinea();
+    }
+
+    calcularImc(71,1.72,"Christian");
+    calcularImc(75,1.73,"Felipe");
+
+</script>

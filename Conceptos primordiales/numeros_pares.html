@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<h2>Programa identificador de numeros pares</h2>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<h3>" + frase + "<h3>");
+        saltarLinea();
+    }
+
+    imprimir("Esta fue mi forma de resolver el problema utilizando %.");
+
+    contador = 1
+    numero = 1
+
+    while(contador <= 101) {
+
+        //El operador % nos sirve para identificar si un numero es divisible entre otro,
+        //ya que este nos devuelve el residuo de tal operación.
+        if ((numero%2) == 0 ) {
+
+            imprimir(numero);
+            numero++;
+            contador++;
+        }
+
+        else {
+
+            numero++;
+            contador++;
+        }
+
+
+    }
+
+    imprimir("Fin");
+
+    imprimir("Esta es la forma que mostro el profesor");
+
+    var contador = 2;
+
+    while(contador <= 100) {
+        imprimir(contador);
+        contador = contador + 2; // incrementar de dos en dos
+    }
+
+    imprimir("FIN");
+
+</script>

@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+    //Cuando al querer concatenar número no hay que olvidar que estos si estan entre comillas serán tratados como texto entonces
+    //el programa solo realizara la suma de ambos textos
+    document.write("18" + "2");
+    document.write("<br><br>");
+
+    //Ya sin las comillas, el programa realizará la operación de suma de ambos números correctamente
+    document.write(18 + 2);
+    document.write("<br><br>");
+
+    document.write("La edad de Christian es: ")
+    document.write(2023-23);
+
+    document.write("<br> <br>");
+    document.write("Las de edades de Pedro,Juan y carlos es: 20 25 15");
+
+    document.write("<br> <br>");
+    document.write("La suma de edades de Pedro,Juan y carlos es: ");
+    document.write(20+25+15);
+
+    document.write("<br> <br>");
+    //Aquí podemos ver como es que se puede concatenar un texto con una operación gracias a la utilización de parentesís
+    document.write("La suma de edades de Pedro,Juan y carlos es: " + (20+25+15));
+
+    document.write("<br> <br>");
+    document.write("El promedio de edad de Pedro, Juan y Carlos es: ");
+    //Recordar que JavaScript se respeta la jerarquía de operaciones, entonces siempre se tienen que utilizar los parentesís de forma correcta
+    document.write((20+25+15)/3);
+
+</script>

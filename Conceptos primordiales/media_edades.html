@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h2>Programa para tablas de multiplicar</h2>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<h3>" + frase + "<h3>");
+        saltarLinea();
+    }
+
+    var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembro: "))
+    var contador = 1
+    var totaldeEdades = 0;
+
+    while(contador <= numeroMiembros) {
+        
+        //sumar, pedir informacion, almacenar esa información y por ultimo poner un contador
+
+        edad = parseInt(prompt("Dame la edad de tu familiar: "));
+        totaldeEdades = totaldeEdades + edad;
+        contador ++;
+
+    }
+
+    imprimir("El total de las edades es: " + totaldeEdades);
+    imprimir("La media de las edades es: " + (totaldeEdades/numeroMiembros));
+
+
+</script>

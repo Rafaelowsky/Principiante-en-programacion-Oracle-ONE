@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<h1>Programa</h1>
+
+<script>
+
+    function saltoLinea () {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+ 
+    var anhoActual = 2023
+    var nacimientoYo = 2000
+    var nacimientoHermana = 1995
+    var edadYo = anhoActual-nacimientoYo
+    var edadHermana = anhoActual - nacimientoHermana
+
+    imprimir("La diferencia de edad mía y de mi hermana es: " + (edadYo - edadHermana));
+    
+</script>

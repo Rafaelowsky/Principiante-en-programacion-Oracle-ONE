@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+
+<h1>Programa IMC personalizado</h1>
+
+<script>
+
+    function saltoLinea () {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+
+    function calcularImc (peso,altura) {
+        return peso / (altura * altura);
+    }
+
+    nombre = prompt("Dime tu nombre: ");
+    pesoInformado = prompt( nombre + " dime tu peso: ");
+    alturaInformada =prompt( nombre + " dime tu altura: ");
+    
+    imprimir(nombre + " tu IMC es de: " + calcularImc(pesoInformado,alturaInformada));
+
+    //Insuficiencia ponderal < 18.5
+
+    if (calcularImc < 18.5 ) {
+
+        imprimir("Tienes una insuficiencia ponderal");
+
+    }
+
+    //Intervalo normal 18.5 - 24.9
+
+    if (calcularImc >= 18.5 ) {
+
+        if (calcularImc <= 24.9) {
+        
+        imprimir("Estas en un intervalo normal :) ");
+        
+        }
+    }    
+    //Sobrepeso =>25
+
+    if (calcularImc >= 25 ) {
+
+        imprimir("Tienes sobrepeso");
+
+    }    
+    //Preobesidad 25.0 - 29.9
+
+    if (calcularImc >= 25.1 ) {
+
+        if (calcularImc <= 29.9) {
+
+         imprimir("Tienes preobesidad");
+
+        }
+    }    
+    //Obesidad >=30
+
+    if (calcularImc >= 30 ) {
+
+        imprimir("Tienes obesidad ):");
+
+    }    
+
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>Programa IMC personalizado</h1>
+
+<script>
+
+    function saltoLinea () {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+
+    function calcularImc (peso,altura) {
+        return peso / (altura * altura);
+    }
+
+    //se utiliza el comando prompt para lanzar un pop up donde podemos recuperar datos que nos provea el usuario
+    nombre = prompt("Dime tu nombre: ");
+    pesoInformado = prompt( nombre + " dime tu peso: ");
+    alturaInformada =prompt( nombre + " dime tu altura: ");
+    
+    imprimir(nombre + " tu IMC es de: " + calcularImc(pesoInformado,alturaInformada));
+
+</script>

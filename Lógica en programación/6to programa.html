@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>Programa</h1>
+
+<script>
+
+    //Este comando nos ayuda para crear funciones y así, no tener que estar escribiendo muchas veces un mismo código.
+    function saltoLinea () {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    //Ya entre los parentesís le damos los parámetros para la función y estos los podemos utilizar dentro de ella misma,
+    //así como tambien podemos ocupar otra función dentro de ella
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+    }
+    var anho = 2025
+
+    imprimir("Hola amigos")
+
+    imprimir("En el año: " + anho);
+
+    imprimir("La edad de Juan: " + (anho-2000) + " años");
+
+    imprimir("La edad de Pedro: " + (anho-1995) + " años");
+
+    imprimir("La edad de Pedro: " + (anho-2005) + " años");
+
+</script>

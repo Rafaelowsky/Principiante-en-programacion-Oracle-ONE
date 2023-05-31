@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h2>Programa para tablas de multiplicar</h2>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<h3>" + frase + "<h3>");
+        saltarLinea();
+    }
+
+    var multiplicador = 1
+
+    imprimir("WHILE")
+
+    while (multiplicador <= 10) {
+
+        imprimir(multiplicador * 7);
+        multiplicador++
+    }
+
+    imprimir("FOR");
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador++ ) {
+
+        imprimir(7 * multiplicador);
+
+    }
+</script>

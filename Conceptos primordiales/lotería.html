@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h2>Lotería</h2>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<h3>" + frase + "<h3>");
+        saltarLinea();
+    }
+
+    function sorteo(n) {
+        
+        return Math.round(Math.random() *n);
+    }
+
+    var numeroPensado = parseInt(sorteo(10));
+    var numeroLanzado = parseInt(prompt("Dame un número entre 1 y 10: "));
+
+    if (numeroPensado == numeroLanzado){
+
+        imprimir("Ganaste la lotería")
+
+    }
+    else {
+
+        if (numeroLanzado > numeroPensado) {
+
+            imprimir("Te equivocaste, el número era menor");
+            imprimir("El número que ganaba la lotería era: " + numeroPensado);
+
+        } 
+
+        else {
+
+            imprimir("Te equivocaste, el número era mayor");
+            imprimir("El número que ganaba la lotería era: " + numeroPensado);
+        }
+        
+        }
+    
+</script>
