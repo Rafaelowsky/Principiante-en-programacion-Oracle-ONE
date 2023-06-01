@@ -19,6 +19,7 @@
 - **Lógica de programación: Primeros pasos**
 - **Lógica de programación: Conceptos Primordiales**
 - **Lógica de programación: Practicando con juegos y animaciones**
+- **HTML5 y CSS3 parte 1**
  
 ## Aclaraciones 👀:
 - **Este repositorio es unicamente educativo para poder almacenar todos los programas a lo largo del curso**
