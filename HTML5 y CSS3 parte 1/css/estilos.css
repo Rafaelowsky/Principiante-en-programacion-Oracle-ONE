@@ -1,5 +1,5 @@
 body {
-    background-color: #CCCCCC;
+    background-color: #FFFFFF;
 }
 
 #banner {
@@ -8,6 +8,10 @@ body {
 
 h1 {
     text-align: center;
+}
+
+.principales {
+    background-color: #CCCCCC
 }
 
 p {
@@ -21,6 +25,14 @@ p {
 em strong {
     color: red;
     
+}
+
+.diferenciales {
+    background-color: #FFFFFF;
+}
+
+h2 {
+    text-align: center;
 }
 
 .items {
